@@ -1,7 +1,11 @@
 local vim = vim
 local Plug = vim.fn['plug#']
 
+vim.lsp.enable('pyright')
+
 vim.call('plug#begin')
+
+Plug 'navarasu/onedark.nvim'
 
 -- Shorthand notation for GitHub; translates to https://github.com/junegunn/seoul256.vim.git
 Plug('junegunn/seoul256.vim')
